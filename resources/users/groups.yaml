@@ -1,4 +1,2 @@
-# admin:
-#   title: Administrators
-#   roles:
-#     - admin
+group1:
+  title: 'Group 1'

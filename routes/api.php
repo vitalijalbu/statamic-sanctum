@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EntryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,13 @@ Route::prefix('auth')->group(function () {
     Route::middleware(['auth:sanctum'])->group(function () {
         Route::get('/me', [AuthController::class, 'me'])->name('auth.me');
         Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
+    });
+
+});
+
+Route::middleware(['auth:sanctum'])->group(function () {
+    // Entry routes
+    Route::prefix('properties')->group(function () {
+        Route::post('/create', [EntryController::class, 'store'])->name('store');
     });
 });

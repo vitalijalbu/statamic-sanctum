@@ -1,4 +1,5 @@
-# admin:
-#   title: Administrator
-#   permissions:
-#     - super
+group_1:
+  title: 'Group 1'
+  permissions:
+    - 'view properties entries'
+    - 'view users'

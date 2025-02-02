@@ -2,3 +2,5 @@ name: admin
 super: true
 id: 63765df9-4669-4d2e-a2a2-77ccab23344b
 password_hash: $2y$12$z2o4gnJhgyX5DsNtDn0iD.fVvD8/1XcXf1itJ49Ebc6LcWrf0myia
+preferences:
+  theme: light
