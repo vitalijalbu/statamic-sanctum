@@ -131,9 +131,9 @@ return [
     'tables' => [
         'users' => 'users',
         'role_user' => 'role_user',
-        'roles' => false,
+        'roles' => true,
         'group_user' => 'group_user',
-        'groups' => false,
+        'groups' => true,
     ],
 
     /*
@@ -148,6 +148,7 @@ return [
     */
 
     'guards' => [
+        'api' => 'api',
         'cp' => 'web',
         'web' => 'web',
     ],
